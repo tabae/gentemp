@@ -5,9 +5,9 @@ use anyhow::{ensure, Result, Context};
 fn main() -> Result<()> {
 
     // set absolute path for template file
-    let path_to_template_file = "/mnt/c/Users/Ebata/OneDrive/kyopro/template.cpp";
-    let path_to_template_file_cf = "/mnt/c/Users/Ebata/OneDrive/kyopro/template_cf.cpp";
-    let path_to_template_file_mini = "/mnt/c/Users/Ebata/OneDrive/kyopro/template_mini.cpp";
+    let path_to_template_file = "/path/to/template.cpp";
+    let path_to_template_file_cf = "/path/to/template_cf.cpp";
+    let path_to_template_file_mini = "/path/to/template_mini.cpp";
     let generated_file_name = "main.cpp";
 
     // read command line options
