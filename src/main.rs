@@ -75,13 +75,13 @@ fn main() -> Result<()> {
 
     // generating directory and template files
     let base_directory = format!("{}/{}", destination_path, directory_name);
-    let _res = mkdir(&base_directory)?;
+    mkdir(&base_directory)?;
     for i in 0..number_of_problems {
         let sub_directory_name : char = ('a' as u8 + i) as char;
         let sub_directory = format!("{}/{}", base_directory, sub_directory_name);
-        let _res = mkdir(&sub_directory)?;
+        mkdir(&sub_directory)?;
         let destination_file_path = format!("{}/{}", sub_directory, generated_file_name);
-        let _res = cp(&source_path, &destination_file_path)?;
+        cp(&source_path, &destination_file_path)?;
     }
     Ok(())
 
